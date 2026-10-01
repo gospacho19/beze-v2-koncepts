@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="lv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Bezē — konditoreja un kulinārija, Blaumaņa iela 7, Rīga</title>
+<meta name="description" content="Bezē — maza konditoreja un kulinārija Rīgas centrā, Blaumaņa ielā 7. Kūkas, eklēri un bezē uz vietas, līdzņemšanai un pēc pasūtījuma. P–Pk 8–21, S–Sv 10–19.">
+<meta name="theme-color" content="#faf5ee">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,500;0,600;1,500&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero-m.jpg" media="(max-width:860px)">
+<link rel="preload" as="image" href="img/hero.jpg" media="(min-width:861px)">
+<style>
+:root{
+  --cream:#faf5ee; --paper:#fffcf8; --pink:#f3d8d4; --pink2:#e9bfba; --pinkline:#e2b4ae;
+  --choc:#2b1a13; --choc2:#3a261d; --text:#4a3931; --mute:#74625a; --line:#e8ddd0;
+  --on:#f6ede4; --on2:#c4ad9e; --onl:#4d382e;
+  --rasp:#a8354f; --open:#5f8a4f;
+  --serif:"Brygada 1918", Georgia, "Times New Roman", serif;
+  --sans:"Onest", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --pad:20px; --max:1200px;
+}
+@media (min-width:600px){:root{--pad:40px}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--cream);color:var(--text);font:400 16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+p{margin:0}
+p,h3,blockquote,figcaption{text-wrap:pretty}
+h1,h2,h3{font-family:var(--serif);font-weight:500;color:var(--choc);margin:0;letter-spacing:-.015em}
+figcaption{margin-top:10px;font:400 13px/1.45 var(--sans);color:var(--mute)}
+[data-lang][hidden]{display:none!important}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.eyebrow{font:500 13px/1.3 var(--sans);color:var(--mute);letter-spacing:.01em}
+.sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* concept notice */
+.notice{background:var(--choc);color:var(--on2);font:400 12.5px/1.4 var(--sans);text-align:center;padding:8px var(--pad)}
+.notice b{color:var(--on);font-weight:600}
+
+/* header */
+.top{position:sticky;top:0;z-index:30;background:rgba(250,245,238,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);transition:box-shadow .2s}
+.top.scrolled{box-shadow:0 1px 0 var(--line)}
+.top .wrap{display:flex;align-items:center;gap:24px;height:64px}
+.mark{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--choc);flex:none}
+/* the owner's own signature logo (as on her window and hanging sign), traced to a path */
+.sig{display:block;fill:currentColor}
+.mark .sig{width:76px;height:54px;stroke:currentColor;stroke-width:14px;margin-top:-4px}
+/* set like the real logo: the words tucked under the signature's long stroke */
+.mark small{font:400 13px/1 var(--sans);color:var(--mute);margin-left:-32px;padding-top:12px}
+.nav{display:none;gap:26px;margin-left:auto}
+.nav a{font:500 14.5px/1 var(--sans);text-decoration:none;color:var(--text);white-space:nowrap}
+.nav a:hover{color:var(--choc)}
+.langs{display:flex;margin-left:auto}
+.langs button{font:600 12px/1 var(--sans);letter-spacing:.06em;border:0;background:none;color:var(--mute);padding:10px 7px;cursor:pointer}
+.langs button[aria-pressed="true"]{color:var(--choc);text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1.5px}
+.top .btn{display:none}
+@media (max-width:860px){
+  .mark{gap:10px}
+  .mark .sig{width:70px;height:50px}
+  .mark small{margin-left:-30px}
+  .mark small{font-size:12.5px}
+  .top .btn{height:40px;padding:0 14px;font-size:14px}
+  .top.cta .btn{display:inline-flex}
+  .top.cta .mark small{display:none}
+  .top .wrap{gap:10px;height:60px}
+  .langs button{padding:10px 5px}
+}
+@media (max-width:374px){.mark small{display:none}}
+@media (min-width:861px){
+  .top .btn{display:inline-flex}
+  .top .wrap{height:76px}
+  .mark .sig{width:82px;height:58px}
+}
+/* the section links only come in once they fit on one line in every language */
+@media (min-width:1080px){
+  .nav{display:flex}
+  .nav + .langs{margin-left:0}
+}
+@media (min-width:1080px) and (max-width:1239px){.mark small{display:none}}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:54px;padding:0 24px;background:var(--choc);color:var(--on);border:0;border-radius:2px;text-decoration:none;font:600 15.5px/1 var(--sans);cursor:pointer;white-space:nowrap}
+.btn:hover{background:#452d22}
+.btn.line{background:transparent;color:var(--choc);box-shadow:inset 0 0 0 1.5px var(--choc)}
+.btn.line:hover{background:var(--choc);color:var(--on)}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* hero */
+.hero{padding-bottom:56px}
+.hero-img{margin:0}
+.hero-img img{width:100%;aspect-ratio:1170/1101;object-fit:cover}
+.hero-txt{padding-top:28px}
+.hero h1{font-size:40px;line-height:1.05;text-wrap:balance}
+.hero .answer{font:italic 500 24px/1.2 var(--serif);color:var(--rasp);margin-top:10px}
+.hero .lead{margin-top:18px;font-size:17px;color:var(--text);max-width:36em}
+.acts{display:flex;gap:10px;margin-top:24px;flex-wrap:wrap}
+.acts .btn{flex:1 1 auto}
+.status{display:flex;align-items:center;gap:9px;margin-top:18px;font:500 14px/1.4 var(--sans);color:var(--text)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--mute);flex:none}
+.dot.open{background:var(--open)}
+.dot.closed{background:var(--rasp)}
+.status .sep{color:var(--pinkline)}
+@media (max-width:860px){
+  .hero .wrap{padding:0}
+  .hero-txt{padding:24px var(--pad) 0}
+  .hero h1{max-width:12em}
+  html[lang="ru"] .hero h1{font-size:33px;max-width:none}
+  html[lang="ru"] .hero-txt{padding-top:20px}
+}
+/* tablet portrait: keep the headline and buttons on the first screen */
+@media (min-width:600px) and (max-width:860px){
+  .hero-img img{max-height:55vh;object-position:50% 60%}
+}
+@media (min-width:861px){
+  .hero{padding:0 0 112px}
+  .hero .wrap{max-width:none;padding:0;display:grid;grid-template-columns:minmax(0,9fr) minmax(0,11fr);min-height:min(calc(100vh - 110px),880px)}
+  .hero-img,.hero-img picture{height:100%}
+  .hero-img img{height:100%;min-height:560px;aspect-ratio:auto;object-position:50% 100%}
+  .hero-txt{display:flex;flex-direction:column;justify-content:center;padding:56px max(var(--pad),calc((100vw - var(--max)) / 2 + var(--pad))) 56px clamp(40px,6vw,96px)}
+  .hero h1{font-size:clamp(52px,4.7vw,78px);line-height:1.02;text-wrap:balance}
+  .hero .answer{font-size:34px;margin-top:16px}
+  .hero .lead{font-size:18.5px;margin-top:26px;max-width:28em}
+  .acts{margin-top:34px}
+  .acts .btn{flex:0 0 auto}
+}
+
+/* the carrot-cake review under the hero */
+.proof{padding:0 0 72px}
+.proof .wrap{border-top:1px solid var(--line);padding-top:40px}
+.proof blockquote{margin:14px 0 0;font:italic 500 23px/1.35 var(--serif);color:var(--choc)}
+.proof .who{margin-top:14px;font-size:14px;color:var(--mute)}
+.score{display:flex;align-items:baseline;gap:12px;margin-top:30px}
+.score b{font:500 52px/1 var(--serif);color:var(--choc)}
+.score span{font-size:14.5px;line-height:1.4;color:var(--text)}
+@media (min-width:861px){
+  .proof{padding-bottom:120px}
+  .proof .wrap{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:80px;padding-top:56px;align-items:end}
+  .proof blockquote{font-size:34px;line-height:1.28;max-width:24em}
+  .score{flex-direction:column;gap:8px;margin:0}
+  .score b{font-size:84px}
+}
+
+/* sections */
+.sec{padding:72px 0}
+.sec h2{font-size:36px;line-height:1.06}
+.sec .sub{margin-top:12px;font-size:17px;max-width:34em}
+@media (min-width:861px){
+  .sec{padding:120px 0}
+  .sec h2{font-size:56px}
+  .sec .sub{font-size:18.5px;margin-top:16px}
+}
+
+/* the case: favourites */
+.faves{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 14px;margin-top:32px;padding:0;list-style:none}
+.faves li{min-width:0}
+.faves img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:2px;background:var(--line)}
+.faves h3{font-size:20px;line-height:1.15;margin-top:12px}
+.faves p{margin-top:6px;font-size:14.5px;line-height:1.45;color:var(--text)}
+@media (min-width:861px){
+  .faves{grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin-top:48px}
+  .faves h3{font-size:24px;margin-top:16px}
+  .faves p{font-size:15.5px}
+}
+
+/* the counter: case photo + tag prices */
+.counter{margin-top:64px}
+.counter figure{margin:0 calc(var(--pad) * -1)}
+.counter figure img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.counter figcaption{padding:0 var(--pad)}
+.counter h3{font-size:28px;margin-top:32px}
+.menu{margin-top:22px}
+.menu h4{font:600 13px/1.3 var(--sans);color:var(--mute);letter-spacing:.02em;margin:0 0 14px}
+.menu ul{list-style:none;margin:0 0 30px;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 18px}
+.menu ul:last-child{margin-bottom:0}
+.menu li{min-width:0;font-size:15.5px;line-height:1.3;color:var(--choc)}
+.menu li > span{display:block}
+.menu li > span:last-child{margin-top:3px;font:500 17px/1.2 var(--serif);color:var(--choc);font-variant-numeric:tabular-nums;white-space:nowrap}
+/* Wolt: a separate note under the list, not a thirteenth item */
+.wolt{margin-top:32px;padding-top:18px;border-top:1px solid var(--line);font-size:15.5px;line-height:1.55;color:var(--text);max-width:34em}
+.wolt a{font-weight:600;color:var(--choc);text-underline-offset:3px;white-space:nowrap}
+@media (min-width:861px){
+  .counter{margin-top:96px;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:64px;align-items:start}
+  .counter figure{margin:0;position:sticky;top:100px}
+  .counter figure img{border-radius:2px}
+  .counter figcaption{padding:0}
+  .counter h3{font-size:34px;margin-top:0}
+  .menu{margin-top:26px}
+  .menu li{font-size:16px}
+  .wolt{font-size:16px}
+}
+
+/* story */
+.story .wrap{border-top:1px solid var(--line);padding-top:64px}
+.story{padding-top:0}
+.story figure{margin:28px 0 0}
+.story figure img{width:100%;border-radius:2px}
+.story blockquote{margin:32px 0 0;font:italic 500 23px/1.38 var(--serif);color:var(--choc)}
+.story .who{margin-top:14px;font-size:14px;color:var(--mute)}
+.story .body{margin-top:24px;font-size:17px;line-height:1.65;max-width:34em}
+.story .body + .body{margin-top:14px}
+@media (min-width:861px){
+  .story .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);grid-template-areas:"fig h" "fig txt";column-gap:88px;align-content:center;padding-top:120px}
+  .story h2{grid-area:h;align-self:end}
+  .story figure{grid-area:fig;margin:0}
+  .story .txt{grid-area:txt;align-self:start}
+  .story blockquote{font-size:31px;line-height:1.3;margin-top:32px}
+  .story .body{font-size:18px}
+}
+
+/* order */
+.order{background:var(--pink)}
+.order .intro figure{margin:28px 0 0}
+.order .intro figure img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:2px}
+.order .done{margin-top:14px;font-size:15px;line-height:1.55;color:var(--text);max-width:34em}
+/* phone: the form comes straight after the intro, the photo after the form */
+@media (max-width:860px){
+  .order .wrap{display:flex;flex-direction:column}
+  .order .intro{display:contents}
+  .order .intro figure{order:2;margin-top:36px}
+  .order .form{order:1}
+}
+.form{margin-top:28px;background:var(--paper);padding:24px 20px 26px;border-radius:2px;box-shadow:0 1px 0 var(--pinkline)}
+.form h3{font-size:24px}
+.fld{margin-top:22px;border:0;padding:0;min-width:0}
+.fld > legend,.fld > label.l{display:block;font:600 14px/1.3 var(--sans);color:var(--choc);margin-bottom:10px;padding:0}
+.fld small{font-weight:400;color:var(--mute)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:500 15px/1 var(--sans);color:var(--choc);background:var(--cream);border:1px solid var(--line);padding:11px 14px;border-radius:2px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--choc);border-color:var(--choc);color:var(--on)}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.two .fld{margin-top:22px}
+input[type=text],input[type=date],input[type=number]{width:100%;min-width:0;height:50px;padding:0 14px;font:400 16px/1 var(--sans);color:var(--choc);background:var(--cream);border:1px solid var(--line);border-radius:2px;-webkit-appearance:none;appearance:none}
+input:focus-visible,.chip:focus-visible,.btn:focus-visible,.langs button:focus-visible{outline:2px solid var(--rasp);outline-offset:2px}
+input::placeholder{color:#b3a298}
+.checks{display:grid;gap:10px}
+.check{display:flex;align-items:center;gap:12px;font-size:15.5px;color:var(--choc);cursor:pointer}
+.check input{width:22px;height:22px;accent-color:var(--choc);margin:0;flex:none}
+.msg{margin-top:26px;background:var(--cream);border-left:3px solid var(--pinkline);padding:16px 16px 18px}
+.msg .l{font:600 12.5px/1.3 var(--sans);color:var(--mute);letter-spacing:.02em}
+.msg pre{margin:8px 0 0;white-space:pre-wrap;font:400 15px/1.55 var(--sans);color:var(--choc)}
+.send{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.send .btn{flex:1 1 auto}
+.fine{margin-top:14px;font-size:13px;line-height:1.5;color:var(--mute)}
+.fine a{color:var(--choc);font-weight:600}
+@media (min-width:861px){
+  .order .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:80px;align-items:start}
+  .order .intro{position:sticky;top:110px}
+  .form{margin-top:0;padding:36px 36px 34px}
+  .form h3{font-size:28px}
+  .order .done{font-size:16px}
+  /* on a computer the text is copied, not texted: the copy button leads */
+  .send #copyBtn{order:-1;background:var(--choc);color:var(--on);box-shadow:none}
+  .send #copyBtn:hover{background:#452d22}
+  .send #smsBtn{background:transparent;color:var(--choc);box-shadow:inset 0 0 0 1.5px var(--choc)}
+  .send #smsBtn:hover{background:var(--choc);color:var(--on)}
+}
+
+/* visit */
+.visit{background:var(--choc);color:var(--on2)}
+.visit h2{color:var(--on)}
+.visit .eyebrow{color:var(--on2)}
+/* the signature again, large and light, like the hanging sign over the door */
+.visit .sig{width:min(300px,78%);height:auto;aspect-ratio:1740/1232;color:var(--on);stroke:currentColor;stroke-width:3px;margin:0 0 36px -6px}
+.hours{margin:28px 0 0;padding:0;list-style:none;max-width:30em}
+.hours li{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:13px 0;border-bottom:1px solid var(--onl);font-size:16.5px;color:var(--on2)}
+.hours li > span:first-child{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px}
+.hours li > span:last-child{white-space:nowrap}
+.hours li.today{color:var(--on);font-weight:600}
+.hours .td{display:none;font:600 11.5px/1 var(--sans);letter-spacing:.03em;color:var(--choc);background:var(--pink);padding:4px 7px 5px;border-radius:2px}
+.hours li.today .td:not([hidden]){display:inline-block}
+.visit .status{color:var(--on);margin-top:20px}
+.visit .acts{margin-top:28px}
+.visit .btn{background:var(--pink);color:var(--choc)}
+.visit .btn:hover{background:#fbe6e2}
+.visit .btn.line{background:transparent;color:var(--on);box-shadow:inset 0 0 0 1.5px var(--on2)}
+.visit .btn.line:hover{background:var(--on);color:var(--choc)}
+.links{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:26px;font-size:15px}
+.links a{color:var(--on);text-underline-offset:4px;text-decoration-color:var(--onl)}
+.links span{color:var(--on2);width:100%;font-size:13.5px}
+.visit figure{margin:48px 0 0}
+.visit figure img{width:100%;aspect-ratio:620/500;object-fit:cover;border-radius:2px}
+.visit figcaption{color:var(--on2)}
+@media (min-width:861px){
+  .visit .wrap{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:96px;align-items:center}
+  .visit .sig{width:360px;margin-bottom:44px}
+  .visit figure{margin:0;max-width:460px}
+  .visit .acts .btn{flex:0 0 auto}
+}
+
+/* footer */
+.foot{background:var(--choc);color:var(--on2);border-top:1px solid var(--onl);padding:36px 0 48px;font-size:13px;line-height:1.6}
+.foot p + p{margin-top:10px}
+.foot b{color:var(--on);font-weight:600}
+@media (min-width:861px){.foot .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px}.foot p + p{margin-top:0}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="sig" viewBox="0 0 1740 1232"><path fill-rule="evenodd" d="M851 1208l4-4 7 0 5-4 0-7 4-5 0-7 4-6 0-9 4-8 0-14 4-10 1-33 3-6 1-46 2-2 1-7 0-46 4-22 0-39 4-18 0-22 4-9 0-11 8-8 6-1 2-4 3 0 21-17 8-13 8-7 4-9 4-2 0-3 8-12 11-1 5 4 43 0 23-12 6-8 4 0 1-5 3-5 4-2 1-6 7-9 1-8 3-2 1-10 3-3 0-8 4-6 2-35-2-5 0-19-4-6 0-11-3-2-1-10-3-1-1-7-4-5 0-7-4-2 0-5-4-3 0-5-3-1-1-6-4-3-4-10-3-1-1-5-8-7 0-3-4-1-1-4-2 0-6-8-3 0 0-3-4-2-1-3-3 0-3-4-8-4-2-4-11-4-2-4-5 0-3-4-6-1-2-3-5 0-3-4-7 0-5-4-10-1-1-3-14 0-5-4 0-4 2 0 2-4 11-4 10-8 5-1 8-6 4-1 3-4 10-4 3-3 5-1 1-3 5-1 9-7 13-5 2-4 10-4 4-4 4 0 2-4 5 0 2-4 11-4 1-3 7-1 1-4 4 0 9-7 6-1 2-4 4 0 3-4 10-4 10-8 11-4 1-3 6-1 2-4 6-1 7-6 5-1 3-4 4 0 3-4 11-4 2-3 6-2 1-3 6-1 2-3 4 0 0-3 26-13 10-8 11-4 1-3 6-1 2-4 4 0 9-7 6-1 1-3 19-9 2-4 5 0 2-4 4 0 9-7 5-1 3-4 10-4 1-3 7-1 2-4 4 0 3-4 17-8 3-4 4 0 4-4 10-4 2-4 6-1 9-7 4 0 1-2 6-5 13-5 9-8 11-4 1-3 7-1 2-4 10-4 1-3 7-1 2-4 4 0 3-4 11-4 1-3 6-1 2-4 11-4 2-4 6 0 2-4 4 0 10-8 4 0 1-3 6-4 6-1 9-7 5-1 2-4 4 0 9-7 5-1 3-4 4 0 8-7 6-1 2-4 5 0 2-4 11-4 3-4 4 0 2-3 3-1 2-3 6-1 10-8 4 0 3-4 3 0 2-4 6 0 2-4 6-1 1-3 11-4 2-4 10-4 1-6-7-2-6 4-7 0-2 4-4 0-3 4-3 0-2 4-10 4-2 4-10 4-3 4-4 0-2 4-11 4-2 4-18 8-1 3-19 9-2 3-6 1-1 3-6 1-2 4-6 1-2 3-11 4-4 4-4 0-2 4-5 0-3 4-18 8-3 4-5 0-2 4-5 0-2 4-5 0-8 7-14 6-2 3-4 0-3 4-11 4-4 4-4 0-1 3-6 1-3 4-6 1-1 3-11 4-2 3-6 1-2 3-5 1-2 4-6 1-9 7-4 0-1 3-6 1-2 4-4 0-9 7-13 5-2 4-4 0-9 7-6 1-3 4-5 0-2 4-6 1-1 3-4 0-11 8-4 0-1 3-6 1-3 4-18 8-1 3-6 1-3 4-4 0-3 4-11 4-2 3-6 1-2 4-5 0-2 4-6 1-9 7-4 0-1 3-6 1-2 4-5 0-3 4-11 4-1 3-6 1-3 4-26 13-1 3-6 0-2 4-11 4-11 8-4 0-2 4-11 4-2 3-6 1-2 4-6 1-1 3-5 0-3 4-10 4-3 4-4 0-3 4-11 4-3 4-5 0-1 3-6 1-3 4-4 0-3 4-11 4-3 4-4 0-3 4-10 4-2 3-6 1-2 4-4 0-4 4-5 1-7 6-6 1-1 3-6 1-2 4-11 4-20 18-8 11 0 3-4 1 0 13 5 6 11 0 4-3 12-1 10 4 13 0 4 4 7 1 2 3 11 4 2 4 5 1 6 7 4 1 1 3 13 8 10 12 8 6 8 13 4 2 0 2 4 3 4 8 4 3 0 3 11 14 1 7 4 3 0 8 4 4 0 7 4 4 0 10 4 5 1 35-1 17-4 5 0 8-4 2-1 7-3 1 0 2-14 17-5 1-6 7-4 0-4 4-27 0 0-7 3-2 2-6 3-1 0-5 4-3 1-7 3-1 1-10 3-2 0-15 4-5 0-15-4-10 0-10-3-1-1-7-3-2-1-6-4-2-4-10-4-1 0-4-4 0 0-3-4-1-2-4-27 0-4 4-3 0-9 12-3 0-4 10-4 4 0 6-4 3 0 4-4 5 0 7-4 5 0 14-3 10 3 27 4 5 0 8 8 10 4 9 3 1 13 15-8 7-1 5-11 10 0 3-3 0-2 4-3 1-1 3-3 0-6 7-6 1-2 4-5 0-2 4-6-1-1-35-3-4-1-23-4-9 0-13-4-7 0-11-4-5 0-10-3-2-1-10-4-3 0-6-3-3-5-13-4-2-9-11-19 1-5 14-3 1-1 7-7 8 0 5-4 5-1 5-3 3-1 6-7 9 0 4-4 3-1 5-3 0-1 7-3 2 0 3-4 2 0 4-4 2 0 4-8 9 0 2-4 2 0 3-3 1-2 6-5 4-10 5-2 4-14 0-3-1-5-10-4-2 0-6-4-6 0-18-3-17 8-11 3-1 0-3 8-7 5-9 3-1 5-11 3-2 0-2 4-4 0-4 4-2 1-5 7-10 1-6 3-2 0-7 4-4 0-9 3-5-3-29-3-2-2-10-11-14-13-7-19 3-4 4-3 0-9 16 0 3-4 6 0 5-4 5 0 10-4 7 0 16-4 7-1 73-13 19-15 13-3 0-1 4-4 0-4 4-3 0 4-23 4-5 1-10 3-2 0-8 4-5 0-10 4-5 0-7 4-5 1-11 3-2 0-10 4-5 1-10 3-2 0-10 4-6 0-12 4-8 1-39-1-21-3-4-1-11-4-5 0-6-4-3-1-5-11-16-29-22-6-1-10-7-11-1-2-3-13 0-8-3-38 0-8 3-19 0-9 4-13 0-5 4-9 0-5 4-10 0-3 4-9 0-3 4-6 0-2 3-7 1-5 4-5 0-3 4-6 0-2 3-6 1-2 3-13 5-3 4-5 0-7 7-6 1-1 3-8 5-4 0-1 3-2-1 8-12 4-3 0-2 4-2 4-9 4-2 0-4 4-1 4-10 3-1 1-3 8-7 4-9 4-1 5-10 7-6 0-3 4-3 4-8 4-2 0-3 8-9 0-4 4-1 4-10 4-1 0-5 8-9 1-5 3-1 4-12 4-2 0-5 4-3 1-5 3-2 5-14 3-1 0-5 4-3 0-6 4-4 0-5 4-5 1-7 3-3 1-8 3-2 0-7 4-6 0-9 4-4 0-14 4-9 0-38-3-3-1-8-4-2 0-5-14-15-5-1-2-3-16-8-11-1-2-3-20-1-42 1-5 3-20 1-8 4-11 0-5 4-10 0-5 4-8 0-4 4-5 0-4 4-7 0-2 3-7 1-4 4-5 0-4 4-5 1-2 3-6 1-2 3-11 4-1 3-5 1-3 4-11 4-2 4-10 4 0 3-9 5-3 0-7 7-4 1-2 4-3 0-10 11-9 5-2 4-3 0-41 43-15 13 0 3-8 7-4 9-4 1-2 4-2 1 0 2-8 8-4 9-4 1 0 2-8 9 0 4-4 2-4 10-4 3 0 4-4 2-4 10-4 3-1 6-7 9 0 5-4 2-1 8-3 1 0 6-4 3 0 6-4 4 0 7-4 3 0 6-4 5 0 10-4 6 0 11-4 8-3 48 3 10 0 18 4 9 0 11 4 5 0 10 3 3 1 10 4 5 0 7 4 5 0 7 3 2 1 6 4 5 0 5 3 3 1 7 3 0 1 8 4 4 4 12 8 10 8 16 4 3 4 10 4 2 5 10 2 1 1 4 8 7 4 8 4 2 0 3 3 0 1 4 3 1 29 31 3 0 1 4 3 0 1 4 10 5 6 7 3 0 2 4 9 4 2 4 5 1 3 4 0 3-4 0-2 4-5 0-2 4-10 4-2 4-3 0-11 9-2 6-11 9-4 8-4 2-1 6-3 1-1 6-3 2-1 10-3 2 0 14-3 7 3 11 0 14 3 3 1 10 3 1 1 6 3 2 1 6 4 2 0 3 9 12 13 12 8 4 2 4 10 4 3 4 6 1 1 3 5 0 3 4 6 0 3 4 9 1 2 3 7 0 5 4 11 0 9 4 51 0 9-4 15 0 6-4 10 0 5-4 8 0 4-4 7 0 5-4 7 0 1-3 7-1 5-4 6 0 2-4 5 0 3-4 5 0 3-4 11-4 4-4 5 0 1-4 4 0 3-4 4-1 1-3 10-4 7-7 4-1 7-8 11-8 3 0 1-3 3-1 14-15 10-5 1-3 5-5 2 0 1-4 3 0 1-3 4-1 0-4 4 0 0-3 4-1 0-3 4-2 8-13 4-2 0-3 4-2 1-4 7-7 0-3 4-2 4-9 4-2 1-5 14-20 1-5 4-3 0-6 4-2 1-6 3-1 1-6 3-2 1-7 3-1 0-6 4-4 0-7 4-6 0-7 4-2 1-6 10-6 1-4 3 0 6-7 9-5 19-20 8-5 3 1 0 11 3 2 1 12 4 6 0 5 4 8 3 2 1 5 4 2 0 3 3 0 4 4 23 0 2-4 6 0 2-4 3 0 9-8 3 0 1-3 3-1 2-4 7-4 5-10 7-7 5-10 3-1 1-7 3-2 1-6 3-1 0-6 4-3 0-4 8-13 0-5 8-10 1-7 3 0 0-3 4-5 7-3 5 4 0 5 4 4 0 8 4 5 0 9 4 5 0 10 3 1 1 15 4 9 0 16 4 9-1 54-7 5-8 0-6 4-52 0-10-4-17 0-8-4-19 0-8-4-11 0-9 8 0 9-4 12 0 43 4 3 0 5 4 2 0 5 4 2 0 6 4 2 0 4 8 11 0 4 8 13 0 6 4 2 4 14 3 2 5 16 4 4 0 6 3 2 1 7 3 1 1 10 4 3 0 6 4 5 0 6 4 5 0 7 4 3 0 6 4 5 0 7 2 0 2 4 0 8 4 5 0 7 4 5 0 7 4 5 0 7 4 5 0 9 4 4 0 10 3 2 1 11 4 10 4 2 0 3 15 4zM853 1175l-5-3-1-11-3-2-1-9-4-4 0-6-4-4 0-6-3-2-1-8-4-4 0-7-3-1-1-7-4-4 0-5-4-4 0-7-4-2 0-7-8-12 0-6-4-3 0-6-3-3-1-5-8-13 0-6-4-2 0-7-3-1-1-7-8-13 0-7-3-2-1-6-3-1-1-7-4-5 0-6-4-2 0-6-4-3 0-6-3-2-1-6-4-5 0-6-3-2-1-36 5-15 6 0 4 3 9 0 5 4 9 0 6 4 9 0 6 4 36 1 41-3 4 3-1 35-2 2 1 6-2 8 0 36-4 17 0 39-4 13 0 39-4 19 0 35-4 12 0 14-4 5-1 14zM717 714l-3-4-1-12 2-5 0-40 4-5 4-18 4-2 0-5 4-5 8-6 10 0 2 4 4 2 0 5 4 5 0 15-4 5 0 12-4 3 0 5-8 12 0 3-4 3-1 5-7 6-1 3-3 1 0 2-4 3-5 7zM974 768l-7 0 0-3-4-1 0-3-4-3 0-2-4-4 0-6-4-5-1-13 1-42 4-4 0-7 4-4 0-6 4-4 0-4 4-1 0-3 3-1 1-4 3 0 2-3 5 0 13 10 1 5 2 0 5 7 1 9 3 1 1 11 3 5 0 10-3 5-1 10-3 3 0 7-3 0-1 8-4 2 0 5-20 25zM441 861l-58-1 0-3-3-1-1-15-4-8 0-14-4-7 0-13-4-7 0-15-4-7 0-14-3-4-1-16-4-8-4-35-4-8 0-13-4-9 0-13-4-10 0-12-4-6 0-22 9-15 17-16 5-1 6-7 5-1 2-4 4 0 4-4 11-4 3-4 5 0 4-4 14-4 4-4 6 0 4-4 7 0 3-4 8 0 4-4 10 0 5-4 10 0 4-4 13 0 10-4 15 0 12-3 31 0 5 3 15 0 5 4 9 0 3 4 7 1 1 3 3 0 11 8 2 4 3 0 1 3 4 2 0 3 4 2 4 9 4 3 0 6 3 1 1 7 4 6 0 11 4 8 0 54-4 8 0 15-4 6 0 12-4 7 0 12-4 5 0 8-4 5 0 8-4 5 0 10-4 5 0 7-4 5 0 7-4 5-1 10-3 2 0 7-9 8-23 12-1 3-7 1-1 3-7 1-2 3-6 1-2 3-6 1-5 4-7 0-4 4-6 0-4 4-7 0-4 4-10 0-5 4-11 0-7 4-14 0-9 4-24 1zM337 932l-8-4-10 0-5-4-7 0-24-12-3-4-5-1-1-3-3 0-7-6 10-2 6-4 15 0 9-4 54-3 4 6 0 5-3 5 0 9-4 4 0 5-4 2 0 3-4 0-3 4-4 0-2 4zM326 1080l-33 0-14-4-21 0-8-4-11 0-5-4-7 0-6-4-6 0-4-4-7-1-27-19-10-13 0-2-3-1-1-6-4-3 0-7-4-6 0-37 4-5 1-10 3-2 0-7 4-2 4-9 4-2 5-8 16-11 6-1 5-4 12 0 1-3 5-1 4 4 5 0 1 4 10 4 2 4 6 1 15 11 5 0 3 4 5 0 3 4 6 0 4 4 8 1 1 3 10 1 2 3 12 0 9 4 7-1 12-3 4-4 3 0 1-4 4 0 4-10 4-4 0-6 4-8 1-23 3-5 32 0 18-4 21 0 9-4 15 0 7-4 12 0 6-4 10 0 2-3 25-5 4-4 7 0 16-8 6 0 3-4 6 0 2-3 14-5 1-3 11-5 2 2-1 18-16 32-4 2 0 5-4 2 0 3-8 9 0 3-4 1-5 10-7 6 0 3-4 2-8 13-4 2 0 3-4 0 0 4-4 1 0 3-8 6-5 8-14 13-10 9-3 1-1 3-3 0-2 4-9 4-2 4-3 1-1 3-3 0-2 4-10 4-2 4-8 4-3 4-11 4-2 4-17 8-3 4-4 0-3 4-4 0-12 8-6 0-3 4-6 0-4 4-7 0-3 4-10 0-5 4-14 0-3 3-6 1zM246 873l-15-1-2-3-5-2-2-3-3 0-9-8-3 0-1-4-9-4-7-8-3 0-6-8-4-1-17-15-13-16-7-5-1-5-16-15-4-9-8-8-4-8-4-2-4-11-4-2-12-25-4-3 0-5-4-4 0-5-3-2-1-6-4-5 0-7-3-1-1-7-3-2-1-11-4-5 0-10-4-5 0-12-4-7 0-18-3-8 0-34 3-8 0-19 4-4 0-11 4-6 0-8 4-4 0-7 3-2 1-8 4-4 0-6 4-3 0-6 4-3 0-5 4-2 0-5 4-3 4-11 12-14 1-6 3-1 0-3 8-8 0-3 8-6 0-4 8-7 0-4 4 0 0-4 4-2 5-9 15-13 0-4 4-1 0-3 4-1 0-3 3 0 6-8 3 0 0-4 3 0 6-8 3 0 0-4 3 0 10-12 3 0 15-12 1-4 3 0 7-8 3 0 12-11 5-1 2-4 10-4 3-4 10-4 2-3 5-1 2-4 4 0 4-4 24-12 4 0 5-4 6 0 3-4 6 0 4-4 8 0 5-4 9 0 3-4 13 0 7-4 45-2 4 2 17 0 6 4 7 0 4 4 7 1 1 3 6 1 14 12 0 3 3 0 1 5 4 4 0 6 3 3 1 6 0 21-4 8 0 11-4 5 0 8-1 3-3 0 0 8-4 3 0 7-4 4 0 6-3 2-1 5-7 11-1 4-4 3-4 10-4 4 0 3-4 3-4 10-4 1-5 11-7 7 0 3-4 4 0 3-4 1-4 9-4 2 0 4-4 2-4 9-4 1 0 3-8 10 0 3-4 1-4 9-8 7 0 3-4 2-1 4-7 7 0 3-4 1-4 9-8 7 0 3-4 1-1 5-7 6 0 4-4 1 0 3-4 1-17 23-3-2-3-5-1-12-4-5 0-10-3-2-1-14-4-6 0-8-4-5 0-10-4-5 0-11-3-2-1-12-4-5 0-9-6-9-10 0-1 3-3 2 0 14 4 6 0 11 4 6 0 10 4 5 0 12 4 6 0 9 4 5 0 10 4 7 0 10 4 4 0 12 4 5 0 11 3 1 1 10-3 1-2 7-7 6 0 3-4 1 0 2-4 3-12 17-4 1 0 4-4 1 0 3-4 2-8 13-4 2 0 3-4 1-2 6 8 5 14 0 5-7 11-9 0-4 4-1 12-17 8-7 0-3 2 0 2-4 4 1 0 10 4 3 0 13 4 10 0 13 4 7 0 15 4 5 0 15 4 9 0 15 4 6 0 15 4 8 0 15 4 7 0 14 3 4 1 17 4 9 3 32-5 4-6 1-22 0-10 4-24 0-11 4-33 1z"/></symbol></svg>
+<div class="notice"><b>Nikita:</b> <span data-lang="lv">Dizaina priekšlikums, nav Bezē oficiālā lapa.</span><span data-lang="ru" hidden>Дизайн-предложение, не официальный сайт Bezē.</span><span data-lang="en" hidden>A design proposal, not Bezē’s official website.</span></div>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="mark" href="#sakums" aria-label="Bezē"><svg class="sig" viewBox="0 0 1740 1232" aria-hidden="true" focusable="false"><use href="#sig"/></svg><small><span data-lang="lv">konditoreja un kulinārija</span><span data-lang="ru" hidden>кондитерская и кулинария</span><span data-lang="en" hidden>patisserie &amp; deli</span></small></a>
+    <nav class="nav" aria-label="Sadaļas">
+      <a href="#vitrina"><span data-lang="lv">Vitrīnā</span><span data-lang="ru" hidden>Витрина</span><span data-lang="en" hidden>The case</span></a>
+      <a href="#kumode"><span data-lang="lv">Stāsts</span><span data-lang="ru" hidden>История</span><span data-lang="en" hidden>Story</span></a>
+      <a href="#pasutit"><span data-lang="lv">Kūkas pēc pasūtījuma</span><span data-lang="ru" hidden>Торты на заказ</span><span data-lang="en" hidden>Cakes to order</span></a>
+      <a href="#kur"><span data-lang="lv">Kur mēs esam</span><span data-lang="ru" hidden>Где мы</span><span data-lang="en" hidden>Visit</span></a>
+    </nav>
+    <div class="langs" role="group" aria-label="Valoda / Язык / Language">
+      <button type="button" data-set="lv" aria-pressed="true">LV</button>
+      <button type="button" data-set="ru" aria-pressed="false">RU</button>
+      <button type="button" data-set="en" aria-pressed="false">EN</button>
+    </div>
+    <a class="btn" href="#pasutit"><span data-lang="lv">Pasūtīt kūku</span><span data-lang="ru" hidden>Заказать торт</span><span data-lang="en" hidden>Order a cake</span></a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="sakums">
+  <div class="wrap">
+    <figure class="hero-img">
+      <picture>
+        <source media="(max-width:860px)" srcset="img/hero-m.jpg">
+        <img src="img/hero.jpg" width="1400" height="1750" alt="Bezē šokolādes kūka ar vīģēm un ogām uz mežģīņu salvetes" fetchpriority="high">
+      </picture>
+    </figure>
+    <div class="hero-txt">
+      <h1><span data-lang="lv">Kur nopirkāt tik gardu kūku?</span><span data-lang="ru" hidden>Где вы купили такой вкусный торт?</span><span data-lang="en" hidden>Where did you get that cake?</span></h1>
+      <p class="answer"><span data-lang="lv">Bezē, Blaumaņa ielā&nbsp;7.</span><span data-lang="ru" hidden>В Bezē, на улице Блауманя,&nbsp;7.</span><span data-lang="en" hidden>At Bezē, Blaumaņa iela&nbsp;7.</span></p>
+      <p class="lead"><span data-lang="lv">Maza konditoreja un kulinārija Rīgas centrā. Kūkas, eklēri un bezē — uz vietas, līdzņemšanai un pēc pasūtījuma.</span><span data-lang="ru" hidden>Маленькая кондитерская и кулинария в центре Риги. Торты, эклеры и безе — на месте, с собой и на заказ.</span><span data-lang="en" hidden>A small patisserie and deli in central Rīga. Cakes, éclairs and meringues — to eat in, to take away and to order.</span></p>
+      <div class="acts" id="heroActs">
+        <a class="btn" href="#pasutit"><span data-lang="lv">Pasūtīt kūku</span><span data-lang="ru" hidden>Заказать торт</span><span data-lang="en" hidden>Order a cake</span></a>
+        <a class="btn line" href="tel:+37122033883"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>22 033 883</a>
+      </div>
+      <p class="status" aria-live="polite"><i class="dot js-dot"></i><span class="js-status">P–Pk 8:00–21:00, S–Sv 10:00–19:00</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="proof" aria-label="Atsauksme">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow"><span data-lang="lv">Tā Google kartēs raksta viena no viešņām</span><span data-lang="ru" hidden>Так пишет в Google Картах одна из гостей (перевод)</span><span data-lang="en" hidden>As one guest wrote on Google Maps (translated)</span></p>
+      <blockquote><span data-lang="lv">„Pasūtīju burkānkūku savā dzimšanas dienā, ar ko pacienāt kolēģus. Visi slavēja, jautāja, kur tik gardu kūku esmu nopirkusi. Protams, pateicu, kur :)”</span><span data-lang="ru" hidden>«Заказала морковный торт на свой день рождения, чтобы угостить коллег. Все хвалили и спрашивали, где я купила такой вкусный торт. Конечно, я сказала где :)»</span><span data-lang="en" hidden>“I ordered a carrot cake for my birthday to treat my colleagues. Everyone praised it and asked where I’d bought such a tasty cake. Of course I told them where :)”</span></blockquote>
+    </div>
+    <div class="score"><b>4,7</b><span><span data-lang="lv">no 5, 640 atsauksmes Google kartēs</span><span data-lang="ru" hidden>из 5, 640 отзывов в Google Картах</span><span data-lang="en" hidden>out of 5, 640 reviews on Google Maps</span></span></div>
+  </div>
+</section>
+
+<section class="sec" id="vitrina" style="padding-top:0">
+  <div class="wrap">
+    <h2><span data-lang="lv">Vitrīnā</span><span data-lang="ru" hidden>В витрине</span><span data-lang="en" hidden>In the case</span></h2>
+    <p class="sub"><span data-lang="lv">Ja nākat pirmo reizi, sāciet ar šiem.</span><span data-lang="ru" hidden>Если вы здесь впервые — начните с этих.</span><span data-lang="en" hidden>First time here? Start with these.</span></p>
+
+    <ul class="faves">
+      <li>
+        <img src="img/pistacija.jpg" width="640" height="800" loading="lazy" alt="Pistāciju kūkas gabals ar avenēm">
+        <h3><span data-lang="lv">Pistāciju kūka</span><span data-lang="ru" hidden>Фисташковый торт</span><span data-lang="en" hidden>Pistachio cake</span></h3>
+        <p><span data-lang="lv">Pistāciju krēms ar aveni un pistācijām&nbsp;virsū.</span><span data-lang="ru" hidden>Фисташковый крем, сверху малина и&nbsp;фисташки.</span><span data-lang="en" hidden>Pistachio cream, a raspberry and pistachios on&nbsp;top.</span></p>
+      </li>
+      <li>
+        <img src="img/ekleri.jpg" width="480" height="600" loading="lazy" alt="Divi eklēri — pistāciju un ar baltu glazūru un avenēm">
+        <h3><span data-lang="lv">Eklēri</span><span data-lang="ru" hidden>Эклеры</span><span data-lang="en" hidden>Éclairs</span></h3>
+        <p><span data-lang="lv">Ar pašu vārītu krēmu, pēc konditores Airitas Jurcikas&nbsp;receptēm.</span><span data-lang="ru" hidden>С заварным кремом собственной варки — по рецептам кондитера Айриты&nbsp;Юрцики.</span><span data-lang="en" hidden>With custard cooked in-house, to pastry chef Airita Jurcika’s&nbsp;recipes.</span></p>
+      </li>
+      <li>
+        <img src="img/zefirs.jpg" width="640" height="800" loading="lazy" alt="Rozā zefīra groziņš">
+        <h3><span data-lang="lv">Zefīra groziņš</span><span data-lang="ru" hidden>Корзиночка с&nbsp;зефиром</span><span data-lang="en" hidden>Zefir basket</span></h3>
+        <p><span data-lang="lv">Rozā zefīrs mazā&nbsp;groziņā.</span><span data-lang="ru" hidden>Розовый зефир в&nbsp;маленькой корзиночке.</span><span data-lang="en" hidden>Pink zefir in a little tart case.</span></p>
+      </li>
+      <li>
+        <img src="img/pavlova.jpg" width="640" height="800" loading="lazy" alt="Pavlova ar putukrējumu un ogām">
+        <h3><span data-lang="lv">Pavlova</span><span data-lang="ru" hidden>Павлова</span><span data-lang="en" hidden>Pavlova</span></h3>
+        <p><span data-lang="lv">Bezē, putukrējums un&nbsp;ogas.</span><span data-lang="ru" hidden>Безе, взбитые сливки и&nbsp;ягоды.</span><span data-lang="en" hidden>Meringue, whipped cream and&nbsp;berries.</span></p>
+      </li>
+    </ul>
+
+    <div class="counter">
+      <figure>
+        <img src="img/vitrina.jpg" width="1170" height="877" loading="lazy" alt="Bezē vitrīna ar rokrakstā rakstītām cenu kartītēm">
+        <figcaption><span data-lang="lv">Vitrīna Blaumaņa ielā. Foto: Vineta K, Google kartes</span><span data-lang="ru" hidden>Витрина на Блауманя. Фото: Vineta K, Google Карты</span><span data-lang="en" hidden>The case on Blaumaņa iela. Photo: Vineta K, Google Maps</span></figcaption>
+      </figure>
+      <div>
+        <h3><span data-lang="lv">Pie letes</span><span data-lang="ru" hidden>У прилавка</span><span data-lang="en" hidden>At the counter</span></h3>
+        <div class="menu">
+          <h4><span data-lang="lv">Kūkas un kūciņas</span><span data-lang="ru" hidden>Торты и пирожные</span><span data-lang="en" hidden>Cakes and pastries</span></h4>
+          <ul>
+            <li><span><span data-lang="lv">Šokolādes Napoleons</span><span data-lang="ru" hidden>Шоколадный Наполеон</span><span data-lang="en" hidden>Chocolate Napoleon</span></span><span>3,80 €</span></li>
+            <li><span><span data-lang="lv">Medus kūka</span><span data-lang="ru" hidden>Медовик</span><span data-lang="en" hidden>Honey cake</span></span><span>3,20 €</span></li>
+            <li><span><span data-lang="lv">Pistāciju-upeņu mūsas kūciņa</span><span data-lang="ru" hidden>Фисташково-смородиновое муссовое пирожное</span><span data-lang="en" hidden>Pistachio and blackcurrant mousse cake</span></span><span>4,50 €</span></li>
+            <li><span><span data-lang="lv">Kazeņu tarte ar balto šokolādi</span><span data-lang="ru" hidden>Тарт с ежевикой и белым шоколадом</span><span data-lang="en" hidden>Blackberry tart with white chocolate</span></span><span>3,80 €</span></li>
+            <li><span><span data-lang="lv">Pavlova</span><span data-lang="ru" hidden>Павлова</span><span data-lang="en" hidden>Pavlova</span></span><span>4,90 €</span></li>
+            <li><span><span data-lang="lv">Biezpiena plātsmaize</span><span data-lang="ru" hidden>Творожный пирог</span><span data-lang="en" hidden>Curd cheese bake</span></span><span>2,90 €</span></li>
+            <li><span><span data-lang="lv">Vēja kūka</span><span data-lang="ru" hidden>Заварное пирожное</span><span data-lang="en" hidden>Cream puff</span></span><span>2,50 €</span></li>
+            <li><span><span data-lang="lv">Mini bezē cielaviņa</span><span data-lang="ru" hidden>Мини-безе «Циелавиня»</span><span data-lang="en" hidden>Mini meringue cake “Cielaviņa”</span></span><span>1,90 €</span></li>
+          </ul>
+          <h4><span data-lang="lv">Mazie našķi</span><span data-lang="ru" hidden>Маленькие сладости</span><span data-lang="en" hidden>Small treats</span></h4>
+          <ul>
+            <li><span><span data-lang="lv">Riekstu našķis</span><span data-lang="ru" hidden>Ореховое лакомство</span><span data-lang="en" hidden>Nut treat</span></span><span>2,90 €</span></li>
+            <li><span><span data-lang="lv">Zefīra groziņi</span><span data-lang="ru" hidden>Корзиночки с&nbsp;зефиром</span><span data-lang="en" hidden>Zefir baskets</span></span><span>1,90 €</span></li>
+            <li><span><span data-lang="lv">Saldā lēdija</span><span data-lang="ru" hidden>Сладкая леди</span><span data-lang="en" hidden>Saldā lēdija (“Sweet Lady”)</span></span><span>1,90 €</span></li>
+            <li><span><span data-lang="lv">Skudrupūznis</span><span data-lang="ru" hidden>Муравейник</span><span data-lang="en" hidden>Anthill cake</span></span><span>1,80 €</span></li>
+            <li><span><span data-lang="lv">Vegānu našķis</span><span data-lang="ru" hidden>Веганское лакомство</span><span data-lang="en" hidden>Vegan treat</span></span><span>1,70 €</span></li>
+          </ul>
+        </div>
+        <p class="wolt"><span data-lang="lv">Wolt lietotnē visbiežāk pasūta Napoleonu, medus kūku, vēja kūkas un eklērus. Ir arī pusdienu piedāvājums un kulinārija.</span><span data-lang="ru" hidden>В Wolt чаще всего заказывают Наполеон, медовик, заварные пирожные и эклеры. Есть и обеденное предложение, и кулинария.</span><span data-lang="en" hidden>Most ordered on Wolt: Napoleon, honey cake, cream puffs and éclairs. There is also a lunch offer and savoury deli food.</span> <a href="https://wolt.com/en/lva/riga/venue/bez-konditoreja" target="_blank" rel="noopener"><span data-lang="lv">Uz Wolt ↗</span><span data-lang="ru" hidden>Открыть Wolt ↗</span><span data-lang="en" hidden>Open Wolt ↗</span></a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec story" id="kumode">
+  <div class="wrap">
+    <h2><span data-lang="lv">Kā ciemos pie omītes</span><span data-lang="ru" hidden>Как в гостях у&nbsp;бабушки</span><span data-lang="en" hidden>Like visiting grandma</span></h2>
+    <figure>
+      <img src="img/logs.jpg" width="900" height="1125" loading="lazy" alt="Apaļš koka galdiņš pie Bezē loga saulē: kūkas gabals, zefīra groziņš un virši vāzē">
+      <figcaption><span data-lang="lv">Galdiņš pie loga Blaumaņa ielā, uz stikla — Bezē paraksts. Foto: Vadims, Google kartes</span><span data-lang="ru" hidden>Столик у окна на Блауманя, на стекле — подпись Bezē. Фото: Vadims, Google Карты</span><span data-lang="en" hidden>The window table on Blaumaņa iela, Bezē’s signature on the glass. Photo: Vadims, Google Maps</span></figcaption>
+    </figure>
+    <div class="txt">
+      <blockquote><span data-lang="lv">„Pirms gadiem 16 vecāmamma man mantojumā atstāja vecu kumodi un lika apsolīt, ka to neizmetīšu ārā un, lai kur būtu pati, ņemšu sev līdzi.”</span><span data-lang="ru" hidden>«Лет шестнадцать назад бабушка оставила мне в наследство старый комод и взяла с меня обещание, что я его не выброшу и, где бы я ни была, возьму с собой.»</span><span data-lang="en" hidden>“Some sixteen years ago my grandmother left me an old chest of drawers and made me promise not to throw it out — and to take it with me wherever I went.”</span></blockquote>
+      <p class="who"><span data-lang="lv">Indra Nikrence, Bezē līdzīpašniece. Swedbank blogs, 2019</span><span data-lang="ru" hidden>Индра Никренце, совладелица Bezē. Блог Swedbank, 2019, перевод</span><span data-lang="en" hidden>Indra Nikrence, co-owner of Bezē. Swedbank blog, 2019, translated</span></p>
+      <p class="body"><span data-lang="lv">Kad Bezē iekārtoja konditoreju uz Brīvības un Stabu ielas stūra, dizainerei pateica: mums ir kumode, vecs, apaļš galds un pavisam neliels budžets. Tā radās galdi no veca koka un vecu dēļu siena.</span><span data-lang="ru" hidden>Когда Bezē обустраивала кондитерскую на углу Бривибас и Стабу, дизайнеру сказали: у нас есть комод, старый круглый стол и совсем небольшой бюджет. Так появились столы из старого дерева и стена из старых досок.</span><span data-lang="en" hidden>When Bezē fitted out its shop on the corner of Brīvības and Stabu, the designer was told: we have a chest of drawers, an old round table and a very small budget. That is how the tables of old wood and the wall of old boards came about.</span></p>
+      <p class="body"><span data-lang="lv">Swedbank blogā rakstīts, ka tieši šī mājīguma sajūta — „kā ciemos pie omītes” — piesaista daudzus apmeklētājus.</span><span data-lang="ru" hidden>В блоге Swedbank писали, что именно это ощущение уюта — «как в гостях у бабушки» (перевод) — и привлекает многих гостей.</span><span data-lang="en" hidden>The Swedbank blog put it this way: it is this homely feeling — “like visiting grandma” (translated) — that draws many people in.</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec order" id="pasutit">
+  <div class="wrap">
+    <div class="intro">
+      <h2><span data-lang="lv">Kūka jūsu dienai</span><span data-lang="ru" hidden>Торт к вашему дню</span><span data-lang="en" hidden>A cake for your day</span></h2>
+      <p class="sub"><span data-lang="lv">Dzimšanas dienām, kolēģiem un svētkiem. Atzīmējiet, kas vajadzīgs, — lapa sagatavos ziņu Bezē, jums atliks to nosūtīt.</span><span data-lang="ru" hidden>На дни рождения, для коллег и к праздникам. Отметьте, что нужно, — страница составит сообщение для Bezē, вам останется только его отправить.</span><span data-lang="en" hidden>For birthdays, colleagues and celebrations. Tick what you need — the page writes the message to Bezē, and you just send it.</span></p>
+      <p class="done"><span data-lang="lv">Pasūtīt var arī bezlaktozes kūku ar piegādi Rīgā — tā dzimšanas dienai darījusi viena no viešņām Google kartēs.</span><span data-lang="ru" hidden>Можно заказать и безлактозный торт с доставкой по Риге — так на день рождения сделала одна из гостей в Google Картах.</span><span data-lang="en" hidden>Lactose-free, delivered in Rīga — one guest on Google Maps ordered a birthday cake just like that.</span></p>
+      <figure>
+        <img src="img/order.jpg" width="1170" height="880" loading="lazy" alt="Bezē ogu kūkas gabals uz mežģīņu salvetes">
+      </figure>
+    </div>
+
+    <form class="form" id="orderForm" onsubmit="return false">
+      <h3><span data-lang="lv">Ziņa par kūku</span><span data-lang="ru" hidden>Сообщение о торте</span><span data-lang="en" hidden>About your cake</span></h3>
+      <fieldset class="fld">
+        <legend><span data-lang="lv">Kāda kūka?</span><span data-lang="ru" hidden>Какой торт?</span><span data-lang="en" hidden>Which cake?</span></legend>
+        <div class="chips" id="cakeChips">
+          <button type="button" class="chip" aria-pressed="false"><span data-lang="lv">Šokolādes kūka</span><span data-lang="ru" hidden>Шоколадный</span><span data-lang="en" hidden>Chocolate</span></button>
+          <button type="button" class="chip" aria-pressed="false"><span data-lang="lv">Burkānkūka</span><span data-lang="ru" hidden>Морковный</span><span data-lang="en" hidden>Carrot</span></button>
+          <button type="button" class="chip" aria-pressed="false" data-keep="1"><span data-lang="lv">Napoleons</span><span data-lang="ru" hidden>Наполеон</span><span data-lang="en" hidden>Napoleon</span></button>
+          <button type="button" class="chip" aria-pressed="false" data-unsure="1"><span data-lang="lv">Vēl nezinu</span><span data-lang="ru" hidden>Пока не знаю</span><span data-lang="en" hidden>Not sure yet</span></button>
+        </div>
+      </fieldset>
+      <div class="two">
+        <div class="fld">
+          <label class="l" for="fDate"><span data-lang="lv">Kurai dienai?</span><span data-lang="ru" hidden>На какой день?</span><span data-lang="en" hidden>For which day?</span></label>
+          <input type="date" id="fDate">
+        </div>
+        <div class="fld">
+          <label class="l" for="fPeople"><span data-lang="lv">Cik cilvēkiem?</span><span data-lang="ru" hidden>На сколько человек?</span><span data-lang="en" hidden>How many people?</span></label>
+          <input type="number" id="fPeople" inputmode="numeric" min="1" max="200" data-ph-lv="piem., 10" data-ph-ru="напр., 10" data-ph-en="e.g. 10" placeholder="piem., 10">
+        </div>
+      </div>
+      <div class="fld">
+        <label class="l" for="fText"><span data-lang="lv">Uzraksts uz kūkas</span><span data-lang="ru" hidden>Надпись на торте</span><span data-lang="en" hidden>Writing on the cake</span> <small><span data-lang="lv">(ja vajag)</span><span data-lang="ru" hidden>(если нужна)</span><span data-lang="en" hidden>(if any)</span></small></label>
+        <input type="text" id="fText" maxlength="60" data-ph-lv="piem., Daudz laimes, Anna!" data-ph-ru="напр., С днём рождения, Анна!" data-ph-en="e.g. Happy birthday, Anna!" placeholder="piem., Daudz laimes, Anna!">
+      </div>
+      <fieldset class="fld">
+        <legend class="sr"><span data-lang="lv">Vēlmes</span><span data-lang="ru" hidden>Пожелания</span><span data-lang="en" hidden>Wishes</span></legend>
+        <div class="checks">
+          <label class="check"><input type="checkbox" id="fLf"><span><span data-lang="lv">Bez laktozes</span><span data-lang="ru" hidden>Без лактозы</span><span data-lang="en" hidden>Lactose-free</span></span></label>
+          <label class="check"><input type="checkbox" id="fDel"><span><span data-lang="lv">Vajadzīga piegāde Rīgā</span><span data-lang="ru" hidden>Нужна доставка по Риге</span><span data-lang="en" hidden>Delivery in Rīga</span></span></label>
+        </div>
+      </fieldset>
+      <div class="fld">
+        <label class="l" for="fName"><span data-lang="lv">Jūsu vārds</span><span data-lang="ru" hidden>Ваше имя</span><span data-lang="en" hidden>Your name</span></label>
+        <input type="text" id="fName" maxlength="40" autocomplete="given-name">
+      </div>
+      <div class="msg">
+        <p class="l"><span data-lang="lv">Ziņa, ko saņems Bezē</span><span data-lang="ru" hidden>Сообщение, которое получит Bezē</span><span data-lang="en" hidden>The message Bezē will get</span></p>
+        <pre id="msg"></pre>
+      </div>
+      <div class="send">
+        <a class="btn" id="smsBtn" href="sms:+37122033883"><span data-lang="lv">Sūtīt īsziņu</span><span data-lang="ru" hidden>Отправить SMS</span><span data-lang="en" hidden>Send as a text</span></a>
+        <button type="button" class="btn line" id="copyBtn"><span class="js-copy"><span data-lang="lv">Kopēt tekstu</span><span data-lang="ru" hidden>Скопировать</span><span data-lang="en" hidden>Copy text</span></span></button>
+      </div>
+      <p class="fine"><span data-lang="lv">Vai arī zvaniet: <a href="tel:+37122033883">22 033 883</a>. Ziņa top jūsu ierīcē — lapa neko nesūta un neglabā.</span><span data-lang="ru" hidden>Или позвоните: <a href="tel:+37122033883">22 033 883</a>. Сообщение составляется на вашем устройстве — страница ничего не отправляет и не хранит.</span><span data-lang="en" hidden>Or call <a href="tel:+37122033883">22 033 883</a>. The message is put together on your device — this page sends and stores nothing.</span></p>
+    </form>
+  </div>
+</section>
+
+<section class="sec visit" id="kur">
+  <div class="wrap">
+    <div>
+      <svg class="sig" viewBox="0 0 1740 1232" role="img" aria-label="Bezē"><use href="#sig"/></svg>
+      <p class="eyebrow"><span data-lang="lv">Kur mēs esam</span><span data-lang="ru" hidden>Где мы</span><span data-lang="en" hidden>Find us</span></p>
+      <h2 style="margin-top:10px">Blaumaņa iela 7</h2>
+      <p style="margin-top:8px;font-size:16px"><span data-lang="lv">Centra rajons, Rīga, LV-1010</span><span data-lang="ru" hidden>Центр, Рига, LV-1010</span><span data-lang="en" hidden>City centre, Rīga, LV-1010</span></p>
+      <ul class="hours" id="hours">
+        <li data-days="1,2,3,4,5"><span><span data-lang="lv">Pirmdiena–piektdiena</span><span data-lang="ru" hidden>Понедельник–пятница</span><span data-lang="en" hidden>Monday–Friday</span><em class="td" data-lang="lv">šodien</em><em class="td" data-lang="ru" hidden>сегодня</em><em class="td" data-lang="en" hidden>today</em></span><span>8:00–21:00</span></li>
+        <li data-days="6,0"><span><span data-lang="lv">Sestdiena, svētdiena</span><span data-lang="ru" hidden>Суббота, воскресенье</span><span data-lang="en" hidden>Saturday, Sunday</span><em class="td" data-lang="lv">šodien</em><em class="td" data-lang="ru" hidden>сегодня</em><em class="td" data-lang="en" hidden>today</em></span><span>10:00–19:00</span></li>
+      </ul>
+      <p class="status"><i class="dot js-dot"></i><span class="js-status"></span></p>
+      <div class="acts">
+        <a class="btn" href="https://maps.google.com/?cid=5490173389169274935" target="_blank" rel="noopener"><span data-lang="lv">Atvērt kartē ↗</span><span data-lang="ru" hidden>Открыть на карте ↗</span><span data-lang="en" hidden>Open in Maps ↗</span></a>
+        <a class="btn line" href="tel:+37122033883"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>22 033 883</a>
+      </div>
+      <p class="links"><span><span data-lang="lv">Piegāde un jaunumi</span><span data-lang="ru" hidden>Доставка и новости</span><span data-lang="en" hidden>Delivery and news</span></span><a href="https://wolt.com/en/lva/riga/venue/bez-konditoreja" target="_blank" rel="noopener">Wolt ↗</a><a href="https://www.instagram.com/bezekonditorejaunkulinarija/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.facebook.com/bezekonditorejaunkulinarija/" target="_blank" rel="noopener">Facebook ↗</a></p>
+    </div>
+    <div>
+      <figure>
+        <img src="img/ieeja.jpg" width="620" height="500" loading="lazy" alt="Bezē ieeja Blaumaņa ielā 7: mājas numurs 7, logs ar Bezē parakstu, piekārta izkārtne un durvis ar darba laiku">
+        <figcaption><span data-lang="lv">Blaumaņa iela 7: logs ar parakstu, blakus durvis. Foto: Google Street View, 2025</span><span data-lang="ru" hidden>Блауманя, 7: окно с подписью, рядом дверь. Фото: Google Street View, 2025</span><span data-lang="en" hidden>Blaumaņa iela 7: the window with the signature, the door beside it. Photo: Google Street View, 2025</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><span data-lang="lv"><b>Dizaina priekšlikums — Nikita.</b> Šī nav Bezē oficiālā lapa. Fakti ņemti no Google kartēm, Wolt un Swedbank bloga intervijas (2019); cenas — no viesa fotogrāfijas, tās var būt mainījušās.</span><span data-lang="ru" hidden><b>Дизайн-предложение — Nikita.</b> Это не официальный сайт Bezē. Факты взяты из Google Карт, Wolt и интервью в блоге Swedbank (2019); цены — с фотографии гостя, они могли измениться.</span><span data-lang="en" hidden><b>A design proposal by Nikita.</b> This is not Bezē’s official website. Facts are taken from Google Maps, Wolt and a Swedbank blog interview (2019); prices are from a guest’s photo and may have changed.</span></p>
+    <p><span data-lang="lv">Fotogrāfijas: Bezē (šokolādes kūka, ogu kūka) un viesi Google kartēs — Vineta K, S Anwar, Iwona Pocięgiel, Anastasia Chu, Gary Seybold, Vadims; ieeja — Google Street View. Paraksts lapas augšā ir Bezē logotips.</span><span data-lang="ru" hidden>Фотографии: Bezē (шоколадный торт, ягодный торт) и гости в Google Картах — Vineta K, S Anwar, Iwona Pocięgiel, Anastasia Chu, Gary Seybold, Vadims; вход — Google Street View. Подпись вверху страницы — логотип Bezē.</span><span data-lang="en" hidden>Photographs: Bezē (the chocolate cake, the berry cake) and guests on Google Maps — Vineta K, S Anwar, Iwona Pocięgiel, Anastasia Chu, Gary Seybold, Vadims; the entrance — Google Street View. The signature at the top is Bezē’s own logo.</span></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var LANGS=['lv','ru','en'], lang='lv';
+  var $=function(s,r){return (r||document).querySelector(s)}, $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+
+  /* ---------- language ---------- */
+  function setLang(l){
+    if(LANGS.indexOf(l)<0) l='lv';
+    lang=l; document.documentElement.lang=l;
+    $$('[data-lang]').forEach(function(e){e.hidden=e.getAttribute('data-lang')!==l});
+    $$('.langs button').forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-set')===l?'true':'false')});
+    $$('[data-ph-'+l+']').forEach(function(i){i.placeholder=i.getAttribute('data-ph-'+l)});
+    try{localStorage.setItem('beze-lang',l)}catch(e){}
+    status(); build();
+  }
+  $$('.langs button').forEach(function(b){b.addEventListener('click',function(){setLang(b.getAttribute('data-set'))})});
+
+  /* ---------- open now (Europe/Riga) ---------- */
+  var T={
+    lv:{open:'Atvērts līdz plkst. ',closedToday:'Slēgts, atvērsim šodien plkst. ',closedTom:'Slēgts, atvērsim rīt plkst. '},
+    ru:{open:'Открыто до ',closedToday:'Закрыто, откроемся сегодня в ',closedTom:'Закрыто, откроемся завтра в '},
+    en:{open:'Open until ',closedToday:'Closed, opens today at ',closedTom:'Closed, opens tomorrow at '}
+  };
+  function hoursFor(d){return (d===0||d===6)?[10,19]:[8,21]}
+  function status(){
+    var now=new Date(), day, h, m;
+    try{
+      var p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Riga',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(now), o={};
+      p.forEach(function(x){o[x.type]=x.value});
+      day=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(o.weekday); h=parseInt(o.hour,10)%24; m=parseInt(o.minute,10);
+    }catch(e){day=now.getDay();h=now.getHours();m=now.getMinutes()}
+    var t=h+m/60, hr=hoursFor(day), txt, cls, s=T[lang];
+    if(t>=hr[0]&&t<hr[1]){txt=s.open+hr[1]+':00';cls='open'}
+    else if(t<hr[0]){txt=s.closedToday+hr[0]+':00';cls='closed'}
+    else{txt=s.closedTom+hoursFor((day+1)%7)[0]+':00';cls='closed'}
+    $$('.js-status').forEach(function(e){e.textContent=txt});
+    $$('.js-dot').forEach(function(e){e.className='dot js-dot '+cls});
+    $$('#hours li').forEach(function(li){li.classList.toggle('today',li.getAttribute('data-days').split(',').indexOf(String(day))>=0)});
+  }
+  setInterval(status,60000);
+
+  /* ---------- cake message ---------- */
+  var M={
+    lv:{hi:'Labdien! Vēlos pasūtīt kūku.',cake:'Izvēle: ',unsure:'Kūka vēl nav izvēlēta — ko jūs ieteiktu?',day:'Diena: ',ppl:function(n){return 'Cilvēku skaits: apmēram '+n}, txt:'Uzraksts: ',lf:'Kūkai jābūt bez laktozes.',del:'Vai iespējama piegāde Rīgā?',ask:'Lūdzu, pasakiet, vai tas iespējams un cik tas maksātu. Paldies!',loc:'lv-LV',copied:'Nokopēts ✓'},
+    ru:{hi:'Здравствуйте! Хочу заказать торт.',cake:'Торт: ',unsure:'Торт ещё не выбрал(а) — что посоветуете?',day:'День: ',ppl:function(n){var a=n%10,b=n%100;return 'Примерно на '+n+' '+((a>=1&&a<=4&&!(b>=11&&b<=14))?'человека':'человек')}, txt:'Надпись: ',lf:'Торт нужен без лактозы.',del:'Возможна ли доставка по Риге?',ask:'Подскажите, пожалуйста, возможно ли это и сколько будет стоить. Спасибо!',loc:'ru-RU',copied:'Скопировано ✓'},
+    en:{hi:'Hello! I’d like to order a cake.',cake:'Cake: ',unsure:'I haven’t chosen the cake yet — what would you suggest?',day:'Day: ',ppl:function(n){return 'For about '+n+(n===1?' person':' people')}, txt:'Writing on the cake: ',lf:'It needs to be lactose-free.',del:'Could you deliver it in Rīga?',ask:'Please let me know if that’s possible and what it would cost. Thank you!',loc:'en-GB',copied:'Copied ✓'}
+  };
+  var chips=$$('#cakeChips .chip');
+  chips.forEach(function(c){c.addEventListener('click',function(){
+    var on=c.getAttribute('aria-pressed')!=='true';
+    chips.forEach(function(x){x.setAttribute('aria-pressed','false')});
+    c.setAttribute('aria-pressed',on?'true':'false'); build();
+  })});
+  ['fDate','fPeople','fText','fName','fLf','fDel'].forEach(function(id){var e=$('#'+id);e.addEventListener('input',build);e.addEventListener('change',build)});
+  var text='';
+  function build(){
+    var s=M[lang], L=[s.hi], c=chips.filter(function(x){return x.getAttribute('aria-pressed')==='true'})[0];
+    if(c){ if(c.getAttribute('data-unsure')) L.push(s.unsure); else { var nm0=$('[data-lang="'+lang+'"]',c).textContent; L.push(s.cake+(c.getAttribute('data-keep')?nm0:nm0.toLowerCase())); } }
+    var d=$('#fDate').value;
+    if(d){ try{ var dt=new Date(d+'T12:00:00'); L.push(s.day+dt.toLocaleDateString(s.loc,{weekday:'long',day:'numeric',month:'long'})); }catch(e){ L.push(s.day+d) } }
+    var n=parseInt($('#fPeople').value,10); if(n>0) L.push(s.ppl(n));
+    var t=$('#fText').value.trim(); if(t) L.push(s.txt+t);
+    if($('#fLf').checked) L.push(s.lf);
+    if($('#fDel').checked) L.push(s.del);
+    L.push(s.ask);
+    var nm=$('#fName').value.trim(); if(nm) L.push('— '+nm);
+    text=L.join('\n');
+    $('#msg').textContent=text;
+    var sep=/iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent)?'&':'?';
+    $('#smsBtn').href='sms:+37122033883'+sep+'body='+encodeURIComponent(text);
+  }
+  $('#copyBtn').addEventListener('click',function(){
+    var done=function(){var el=$('.js-copy'), keep=el.innerHTML; el.textContent=M[lang].copied; setTimeout(function(){el.innerHTML=keep; setLang(lang)},1800)};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(done,function(){fallback();done()})}else{fallback();done()}
+    function fallback(){var ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(ta)}
+  });
+  var dEl=$('#fDate'); try{var td=new Date(); dEl.min=td.toISOString().slice(0,10)}catch(e){}
+
+  /* ---------- header: shadow + order button once the hero buttons scroll away ---------- */
+  var top=$('#top'), acts=$('#heroActs');
+  function onScroll(){
+    top.classList.toggle('scrolled',window.scrollY>8);
+    var r=acts.getBoundingClientRect(); top.classList.toggle('cta',r.bottom<64);
+  }
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  /* ---------- start ---------- */
+  var start='lv';
+  try{var q=new URLSearchParams(location.search).get('lang'); if(q&&LANGS.indexOf(q)>=0) start=q; else {var st=localStorage.getItem('beze-lang'); if(st&&LANGS.indexOf(st)>=0) start=st;}}catch(e){}
+  setLang(start);
+})();
+</script>
+</body>
+</html>
